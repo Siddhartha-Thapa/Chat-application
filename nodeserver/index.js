@@ -3,7 +3,7 @@
 //server that handles socket.io connection
 const io = require('socket.io')(8000, {
     cors: {
-        origin: "*",
+        origin: "https://sidyoochat.onrender.com",
         methods: ["GET", "POST"]
     }
 });
