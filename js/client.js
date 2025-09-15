@@ -18,14 +18,17 @@ const uname = prompt("Enter your name to join the chat");
 socket.emit('new-user', uname);
 
 
-form.addEventListener('submit',(e)=>{
+form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const message = messageinput.value;
+    const message = messageinput.value.trim();
+    if (message === "") {
+        // Optionally, show a warning or shake the input
+        return; // Do not send empty messages
+    }
     append(`You: ${message}`, 'right');
-    socket.emit('send' , message);
+    socket.emit('send', message);
     messageinput.value = '';
-
-} )
+});
 
 socket.on('user-joined', uname=>{
     append(`${uname} joined the chat`, 'right');
