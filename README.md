@@ -1,4 +1,4 @@
-# YOOCHAT - Realtime Futuristic Chat App
+# YOOCHAT - Realtime Chat App
 
 YOOCHAT is a real-time chat application with a futuristic UI, built using **Socket.io**, **Node.js**, and a modern HTML/CSS/JS frontend. Users can join, send messages, and receive notifications instantly.
 
