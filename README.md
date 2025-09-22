@@ -94,9 +94,6 @@ Open `http://localhost:5500` in your browser.
 
 - [Socket.io](https://socket.io/)
 - [Orbitron Font](https://fonts.google.com/specimen/Orbitron)
-- [Netlify](https://netlify.com)
-- [Render](https://render.com)
-
 ---
 
 **Enjoy chatting with YOOCHAT!**
